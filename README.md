@@ -24,3 +24,6 @@ localstack-s3-sqs-java-lambda-pipeline/
 │
 ├── .gitignore
 └── README.md
+
+<img width="266" height="301" alt="image" src="https://github.com/user-attachments/assets/1e3b4c30-876a-4aa2-9c4b-8e3bdd7cd713" />
+
