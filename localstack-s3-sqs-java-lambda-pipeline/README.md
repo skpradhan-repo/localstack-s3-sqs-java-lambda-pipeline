@@ -1,0 +1,1 @@
+# LocalStack S3-SQS Java Lambda Pipeline

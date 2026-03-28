@@ -1,0 +1,1 @@
+// placeholder content for src/main/java/SqsHandler.java

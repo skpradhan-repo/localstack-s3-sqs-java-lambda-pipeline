@@ -1,0 +1,6 @@
+{
+  "orderId": "ORD-001",
+  "customer": "Alice",
+  "amount": 1200,
+  "currency": "INR"
+}

@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "messageId": "1",
+      "receiptHandle": "test-handle-1",
+      "body": "input-bucket:test/file1.txt",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1710000000000",
+        "SenderId": "test",
+        "ApproximateFirstReceiveTimestamp": "1710000000000"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "dummy",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:000000000000:my-queue",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}
