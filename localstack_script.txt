@@ -1,0 +1,1 @@
+podman run --name localstack_main --rm -it --security-opt label=disable -p 4566:4566 -p 4510-4559:4510-4559 -e AWS_DEFAULT_REGION=us-east-1 -e AWS_ACCESS_KEY_ID=test -e AWS_SECRET_ACCESS_KEY=test -e DEBUG=1 -v /var/run/docker.sock:/var/run/docker.sock -v localstack_data:/var/lib/localstack localstack/localstack

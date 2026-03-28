@@ -1,0 +1,16 @@
+Get the IP address used in project : podman inspect -f '{{.NetworkSettings.Networks.localstack_network.IPAddress}}' a7459ba15e39
+
+podman run -dit --name lambda_sqs_to_s3 --network localstack_network public.ecr.aws/lambda/java:17 /bin/bash
+
+
+podman pull docker.io/localstack/localstack
+
+podman run -d --name localstack -p 4566:4566 -e DEBUG=1 docker.io/localstack/localstack
+
+aws --endpoint-url=http://localhost:4566 s3 mb s3://my-bucket
+
+aws --endpoint-url=http://localhost:4566 s3 ls s3://my-bucket
+
+aws --endpoint-url=http://localhost:4566 sqs create-queue --queue-name my-queue
+
+aws --endpoint-url=http://localhost:4566 sqs get-queue-url --queue-name my-queue
